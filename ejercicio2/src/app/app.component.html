@@ -1,0 +1,12 @@
+<button (click)='getAllPersona()'>presionar</button>
+
+<ul *ngFor='let p of persona'>
+<h4> Dados Pessoais </h4>
+<li>nome: {{ p.name }}</li>
+<li>usuario: {{ p.username}}</li>
+<li>Telefone: {{ p.phone }}</li>
+<li>email: {{ p.email }}</li>
+<li>website: {{ p.website }}</li>
+<li>Endereço: {{ p.address.city }}</li>
+<hr>
+</ul>
